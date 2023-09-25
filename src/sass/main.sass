@@ -1,0 +1,37 @@
+@import "./helpers/_variables.sass"
+@import "./globals/_globals.sass"
+@import "./components/article.sass"
+@import "./components/related.sass"
+@import "./components/author.sass"
+@import "./components/tag.sass"
+
+main
+    height: 100vh
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: $xl
+    padding-right: 12rem
+
+section
+    width: 100%
+
+.left_section
+    flex-basis: 25%
+    border-right: $divider
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-left: $md
+    padding-right: $md
+    :last-child
+        border-bottom: 0px !important
+
+article
+    padding: $xl
+    flex-basis: 50%
+
+.right_section
+    border-left: $divider
+    flex-basis: 25%

@@ -1,0 +1,1 @@
+const variable = "This is a nice variable"
