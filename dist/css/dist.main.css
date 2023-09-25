@@ -64,12 +64,100 @@ article p {
   font-weight: 400;
 }
 
+.quick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  border-bottom: 2px solid #c5c5c5;
+}
+.quick img {
+  aspect-ratio: 1/1;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.quick .content .heading {
+  font-size: 1.1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+}
+
 .author {
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   opacity: 0.6;
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.newsletter .heading {
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+}
+.newsletter form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.newsletter form input {
+  border-radius: 0;
+  border: 2px solid #d5d5d5;
+  padding: 0.75rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.newsletter form button {
+  font-weight: 700;
+  border: none;
+  padding: 0.75rem;
+  background-color: #e61c23;
+  color: #ededed;
+  height: 100%;
+  white-space: nowrap;
+}
+.newsletter .footer {
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.8;
 }
 
 .tag {
@@ -132,7 +220,19 @@ article {
 }
 
 .right_section {
+  padding: 1.5rem;
   border-left: 2px solid #c5c5c5;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.25rem;
 }
