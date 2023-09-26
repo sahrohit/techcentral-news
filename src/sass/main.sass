@@ -4,17 +4,18 @@
 @import "./components/related.sass"
 @import "./components/quick.sass"
 @import "./components/author.sass"
-@import "./components/newsletter.sass"
+@import "./components/footer.sass"
+@import "./components/header.sass"
 @import "./components/tag.sass"
 
 main
-    height: 100vh
+    height: 90vh
     width: 100%
     display: flex
     flex-direction: row
     justify-content: space-between
-    padding: $xl
-    padding-right: 12rem
+    padding-left: $xl
+    padding-right: 13.5rem
 
 section
     width: 100%
@@ -30,7 +31,7 @@ section
     :last-child
         border-bottom: 0px !important
 
-article
+.middle_section
     padding: $xl
     flex-basis: 50%
 
